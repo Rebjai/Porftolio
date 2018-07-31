@@ -5,14 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/main.css">
     <title>Landing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-height: 3em;
+            display: flex;
+            z-index: 9999;
+            opacity: 0;
+            animation: 1.5s fadein 2s forwards;
+        }
+
+        nav {
+            width: 100%;
+            height: 3em;
+            ;
+            background-color: rgba(0, 0, 0, 0.666);
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        nav li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li:hover a {
+            color: #666;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:active {
+            color: #666;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            font-family: 'Courier new', Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        section {
+            background-color: rgb(67, 67, 67);
+            padding: 0 0 3em 0;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+        }
+
+        .parallax h1 {
+            opacity: 0;
+            animation: 4s fadein 0.5s forwards;
+        }
+
+        .parallax p {
+            opacity: 0;
+            animation: 2s fadein 2s forwards;
+        }
+
+        #about .parallax {
+            background-image: url(../images/clear-desk.jpg);
+            min-height: 100vh;
+
+
+        }
+
+        #about .info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            text-align: left;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
         <div id="logo">
-            <img src="" alt="">logo</div>
+            REBJAI
+        </div>
         <nav>
             <ul>
                 <li>
@@ -151,8 +260,8 @@
             </div> -->
             <div class="skillset">
                 <div class="skill trigger" id="front-end">
-                    <h3 >FrontEnd</h3>
-                    <ul class="reveal" id="reverse">
+                    <h3>FrontEnd</h3>
+                    <ul class="reveal reverse">
                         <li>HTML5</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
@@ -165,8 +274,8 @@
                     </ul>
                 </div>
                 <div class="skill trigger" id="back-end">
-                    <h3 >Backend</h3>
-                    <ul class="reveal" id="reverse">
+                    <h3>Backend</h3>
+                    <ul class="reveal reverse ">
                         <li>Node</li>
                         <li>PHP</li>
                         <li>JAVA</li>
@@ -175,8 +284,8 @@
 
                 </div>
                 <div class="skill trigger" id="others">
-                    <h3 >Others</h3>
-                    <ul class="reveal" id="reverse">
+                    <h3>Others</h3>
+                    <ul class="reveal reverse">
                         <li>UX</li>
                         <li>GIT</li>
                         <li>GitHub</li>
@@ -202,7 +311,7 @@
         </section>
         <section id="contact">
             <div class="parallax">
-                <h1>contact me</h1>
+                <h1>Contact me!</h1>
                 <p> let's create something amazing together, you can reach me with a click</p>
             </div>
             <div>

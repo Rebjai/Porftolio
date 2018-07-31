@@ -184,7 +184,7 @@ grid-area: front;
 .trigger:hover > .reveal {
     height: 30vh;
   }
-#reverse{
+.reverse{
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
