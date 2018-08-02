@@ -16,7 +16,7 @@ footer{
     margin: 2em auto 1em auto;
     border-radius: 15%;
 }
-.info p{
+p{
     color: rgb(230, 216, 108);
     font-family: 'Times New Roman', Times, serif;
     margin: 1em 0;
@@ -127,7 +127,41 @@ grid-area: front;
     display: inline-block;
     width: 45%;
     height: 30vh;
-    background-color: rgba(102, 102, 102, 0.666);
+    background-color: rgba(239, 39, 39, 0.845);
+    overflow: hidden;
+    transition: transform 800ms;
+    position: relative;
+}
+.project img{
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transition: transform 300ms ease-in;
+    
+    
+}
+.project:hover{
+    transform: scale(1.1);
+    z-index: 9999;
+}
+.project:hover img{
+transform: scale(1.3);
+z-index: 9998;
+}
+.project::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(171, 171, 171, 0.592);
+    z-index: 9999;
+}
+.project:hover::before{ 
+    background-color: rgba(171, 171, 171, 0);
+}
+blockquote p{
+    color: rgb(43, 43, 43);
+    font-style: italic;
 }
 #logo{
     background-color: rgba(0, 0, 0, 0.666);
@@ -155,6 +189,7 @@ section#portfolio{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }   
 #contact .parallax{
     
@@ -319,6 +354,13 @@ section#portfolio{
     .trigger:hover > .reveal {
         height: 100%;
       }
+      .project:hover{
+        transform: scalex(1.2);
+        z-index: 9999;
+    }
+    .project:hover img {
+        transform: scale(1.6, 1.1)
+    }
     #contact form{
         width: 100%;
         border-radius: 3%;
