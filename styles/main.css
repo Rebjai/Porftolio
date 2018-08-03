@@ -300,6 +300,7 @@ section#portfolio{
 }
 
 /* animations */
+
 @keyframes fadein{
     0%{
         opacity: 0;
@@ -311,6 +312,26 @@ section#portfolio{
 @keyframes color-change{
     100%{
         color: rgb(55, 174, 59)
+    }
+}
+@keyframes move-up-down{
+    0%{
+        transform: translateY(0%)
+    }
+    15%{
+        transform: translateY(50%);
+    }
+    30%{
+        transform: translateY(0%)
+    }
+    45%{
+        transform: translateY(50%)
+    }
+    60%{
+    transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(0%)
     }
 }
 

@@ -88,6 +88,7 @@
             align-items: center;
             justify-content: center;
             min-height: 60vh;
+            overflow: hidden;
         }
 
         .parallax h1 {
@@ -96,8 +97,20 @@
         }
 
         .parallax p {
+            color: rgb(69, 69, 69);
+            font-weight: bolder;
             opacity: 0;
             animation: 2s fadein 2s forwards;
+            transition: transform 500ms ease-in, text-shadow 500ms ease-in-out, color 700ms ease-in-out;
+        }
+
+        .parallax p:hover {
+            color: rgb(43, 43, 43);
+            opacity: 0;
+            animation: 2s fadein 2s forwards;
+            text-shadow: 0px 0px 27px rgb(255, 255, 69);
+            transform: scale(1.4);
+
         }
 
         #about .parallax {
@@ -105,6 +118,24 @@
             min-height: 100vh;
 
 
+        }
+
+        .arrow {
+            height: 7vw;
+            width: 11vw;
+            position: absolute;
+            opacity: .65;
+            bottom: 0vh;
+            animation:  move-up-down 2500ms 40ms forwards ease-in-out infinite;
+        }
+
+        .arrow2 {
+            height: 7vw;
+            width: 9vw;
+            position: absolute;
+            opacity: .8;
+            bottom: 7vh;
+            animation: move-up-down 2500ms forwards ease-in-out infinite;
         }
 
         #about .info {
@@ -145,11 +176,17 @@
     <section id="about">
         <div class="parallax">
             <h1>JESÚS REBOLLAR</h1>
+
             <p>WEB DEVELOPER</p>
+
+            <img src="images/arrow-down.svg" alt="discover more about me" class="arrow">
+            <img src="images/arrow-down.svg" alt="discover more about me" class="arrow2">
+
         </div>
         <div class="info">
             <p>21 years old, passionate for technology, web developer and part time geek always trying to learn new and amazing
-                things.</p>
+                things.
+            </p>
             <p>I'm a
                 <span id="tooltip" data-tool-tip="I Made my first web page when i was 13 years old">self taught developer</span>, with over 2 year of experience using standarized web technologies to make elegant,
                 responsive and interactive web pages.</p>
@@ -217,9 +254,8 @@
         <div class="info">
             <blockquote>
                 <p>
-                     dolor sit amet consectetur adipisicing elit. Culpa nemo minima suscipit dolores!
-                    Tempore neque excepturi laborum sint sunt ut iure provident dolor officiis quia fuga at, error perferendis
-                    aut!
+                    dolor sit amet consectetur adipisicing elit. Culpa nemo minima suscipit dolores! Tempore neque excepturi laborum sint sunt
+                    ut iure provident dolor officiis quia fuga at, error perferendis aut!
                 </p>
                 <strong>Lorem ipsum</strong>
             </blockquote>
