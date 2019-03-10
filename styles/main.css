@@ -94,6 +94,10 @@ grid-area: front;
     flex-flow: column-reverse;
     
 }
+.active{
+    color: rgb(241, 52, 52);
+
+}
 .reveal {
     transition: height 1s;
     overflow: hidden;

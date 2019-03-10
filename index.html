@@ -26,7 +26,7 @@
             display: flex;
             z-index: 9999;
             opacity: 0;
-            animation: 1.5s fadein 2s forwards;
+            animation: 1.5s fadein 1s forwards;
         }
 
         nav {
@@ -124,8 +124,8 @@
             width: 11vw;
             position: absolute;
             opacity: .65;
-            bottom: 0vh;
-            animation:  move-up-down 2500ms 40ms forwards ease-in-out infinite;
+            bottom: 26vh;
+            animation:  move-up-down 2500ms  forwards ease-in-out infinite;
         }
 
         .arrow2 {
@@ -133,8 +133,8 @@
             width: 9vw;
             position: absolute;
             opacity: .8;
-            bottom: 7vh;
-            animation: move-up-down 2500ms forwards ease-in-out infinite;
+            bottom: 29vh;
+            animation: move-up-down 2500ms 40ms forwards ease-in-out infinite;
         }
 
         #about .info {
@@ -156,16 +156,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#about">about me</a>
+                    <a href="#about" onclick="return scrollToView('#about')">about me</a>
                 </li>
                 <li>
-                    <a href="#skills">skills</a>
+                    <a href="#skills" onclick="return scrollToView('#skills')">skills</a>
                 </li>
                 <li>
-                    <a href="#portfolio">portfolio</a>
+                    <a href="#portfolio"onclick="return scrollToView('#portfolio')">portfolio</a>
                 </li>
                 <li>
-                    <a href="#contact">contact</a>
+                    <a href="#contact" onclick="return scrollToView('#contact')">contact</a>
                 </li>
 
             </ul>
@@ -294,6 +294,7 @@
 
     </footer>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
